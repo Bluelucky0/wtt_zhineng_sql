@@ -1,0 +1,101 @@
+[{
+    "_id": {
+        "$oid": "623999e39482cfd7f3f79627"
+    },
+    "userId": "wps",
+    "userName": "吴大帅",
+    "password": "123456",
+    "label": "文化景区,自然景区，娱乐景区，游玩景区",
+    "uuid": "",
+    "avatar": "",
+    "name": "",
+    "description": "",
+    "img": "",
+    "detail": "",
+    "introduction": "",
+    "aaa": "",
+    "bbb": "",
+    "ccc": "",
+    "ddd": "",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "6239bde39482cfd7f3f7962c"
+    },
+    "userId": "atm",
+    "userName": "奥特曼",
+    "password": "123456",
+    "label": "文化景区,自然景区，娱乐景区，游玩景区",
+    "uuid": "",
+    "avatar": "",
+    "name": "",
+    "description": "",
+    "img": "",
+    "detail": "",
+    "introduction": "",
+    "aaa": "",
+    "bbb": "",
+    "ccc": "",
+    "ddd": "",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "6239c6203579bb1da4615908"
+    },
+    "userId": "dgs",
+    "userName": "大怪兽",
+    "password": "123456",
+    "label": "娱乐景区",
+    "uuid": "",
+    "avatar": "",
+    "name": "",
+    "description": "",
+    "img": "",
+    "detail": "",
+    "introduction": "",
+    "aaa": "",
+    "bbb": "",
+    "ccc": "",
+    "ddd": "",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "6239c6343579bb1da461590c"
+    },
+    "userId": "xgs",
+    "userName": "小怪兽",
+    "password": "123456",
+    "label": "娱乐景区",
+    "uuid": "",
+    "avatar": "",
+    "name": "",
+    "description": "",
+    "img": "",
+    "detail": "",
+    "introduction": "",
+    "aaa": "",
+    "bbb": "",
+    "ccc": "",
+    "ddd": "",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "623a044c1087119914f338e8"
+    },
+    "userId": "cdgs",
+    "userName": "超级怪兽",
+    "password": "123456",
+    "label": "娱乐景区",
+    "uuid": "",
+    "avatar": "",
+    "name": "",
+    "description": "",
+    "img": "",
+    "detail": "",
+    "introduction": "",
+    "aaa": "",
+    "bbb": "",
+    "ccc": "",
+    "ddd": "",
+    "__v": 0
+}]

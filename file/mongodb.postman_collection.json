@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "fb3ad4f1-ab11-46a0-a109-6e7dfc966a9f",
+		"name": "mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "查看所有景点",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/getTravel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"getTravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "随机查看所有景点",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/randomTravel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"randomTravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询热门景点",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/getTravelByHot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"getTravelByHot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询指定景点",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/getTravel/sanya",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"getTravel",
+						"sanya"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增景点",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/addTravel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"addTravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "编辑景点",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"wuyishan\",\r\n    \"name\": \"武夷山\",\r\n    \"introduction\": \"37498hfjsdhfjshdkfs\",\r\n    \"label\": \"游山玩水\",\r\n    \"hot\": 9,\r\n    \"tag\": \"武夷山十八寨\",\r\n    \"detail\": \"\",\r\n    \"discuss\": \"\",\r\n    \"good\": \"\",\r\n    \"sale\": \"https://img1.baidu.com/it/u=1246635564,2401041624&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500\",\r\n    \"price\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/editTravel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"editTravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除景点",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/deleteTravel/sanya",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"deleteTravel",
+						"sanya"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "根据label查询指定景区",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"label\":\"游玩景区,文化景区\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/getTravelByLabel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"getTravelByLabel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "全局搜索",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tag\":\"美食\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/globalSearch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"globalSearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查看所有用户",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"wps\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "注册新用户",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"cddgs\",\r\n    \"userName\":\"超级大怪兽\",\r\n    \"password\":\"123456\",\r\n    \"label\":\"娱乐景区\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "编辑用户",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"aaa\",\r\n    \"userName\":\"aaa222\",\r\n    \"password\":\"123456\",\r\n    \"label\":\"娱乐景区\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/travel/editUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"editUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除用户",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/travel/deleteUser/aaa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"travel",
+						"deleteUser",
+						"aaa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
